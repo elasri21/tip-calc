@@ -12,10 +12,10 @@ spans.forEach(span => {
         let numOfPeople = parseInt(document.getElementById('num-of-people').value)
         const tip1 = document.querySelector('.tip-1')
         let tipAmount = (num * bill)/(100 * numOfPeople)
-        tip1.textContent = `$ ${tipAmount}`
+        tip1.textContent = `$ ${tipAmount.toFixed(2)}`
         //total 
         const total1 = document.querySelector('.total-1')
-        total1.textContent = `$ ${((tipAmount * numOfPeople) + bill) / numOfPeople}`;
+        total1.textContent = `$ ${(((tipAmount * numOfPeople) + bill) / numOfPeople).toFixed(2)}`;
     })
 })
 const custom = document.getElementById('num-of-people');
@@ -24,10 +24,10 @@ custom.addEventListener('blur', function(){
     let bill = parseFloat(document.getElementById('bill-field').value)
     let numOfPeople = parseInt(this.value)
     const tip1 = document.querySelector('.tip-1')
-    tip1.innerHTML = `$ ${num/numOfPeople}`
+    tip1.innerHTML = `$ ${(num/numOfPeople).toFixed(2)}`
     //
     const total1 = document.querySelector('.total-1')
-    total1.textContent = (num + bill) / numOfPeople;
+    total1.textContent = ((num + bill) / numOfPeople).toFixed(2);
 
 })
 
