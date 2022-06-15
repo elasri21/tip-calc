@@ -31,6 +31,12 @@ custom.addEventListener('blur', function(){
 
 })
 
+const reset = document.getElementById("reset");
+reset.addEventListener("click", function(e){
+    e.preventDefault();
+    window.location.reload();
+})
+
 
 
 

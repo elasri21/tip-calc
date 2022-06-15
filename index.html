@@ -8,61 +8,59 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/main.css">
     <title>Frontend Mentor | Tip calculator app</title>
 </head>
 <body>
-    <div id="container">
-        <div id="page">
-            <div class="logo"><img src="images/logo.svg" alt=""></div>
-            <form action="" id="form">
-                <div class="para">
-                    <div class="bill">
-                        <h6>Bill</h6>
-                        <img src="images/icon-dollar.svg" alt="">
-                        <input type="text" id="bill-field" value="0">
-                    </div>
-                    <div class="tips">
-                        <h6>Select Tip %</h6>
-                        <span class="percent">5%</span>
-                        <span class="percent">10%</span>
-                        <span class="percent">15%</span>
-                        <span class="percent">25%</span>
-                        <span class="percent">50%</span>
-                        <input type="text" value="Custom" class="custom">
-                    </div>
-                    <div class="people">
-                        <p>Number of people</p>
-                        <img src="images/icon-person.svg" alt="">
-                        <input type="text" id="num-of-people" value="0">
-                    </div>
+    <div id="page" class="page">
+        <div class="logo"><img src="images/logo.svg" alt=""></div>
+        <form action="" id="form">
+            <div class="para">
+                <div class="bill">
+                    <h6>Bill</h6>
+                    <img src="images/icon-dollar.svg" alt="">
+                    <input type="text" id="bill-field" value="0">
                 </div>
-                <div id="result">
-                    <div class="tip-amount">
-                        <div class="tip-by">
-                            <h4>Tip Amount</h4>
-                            <p>/person</p>
-                        </div>
-                        <div class="result"><p class="tip-1">$0.00</p></div>
-                    </div>
-                    <div class="total-amount">
-                        <div class="total-by">
-                            <h4>Total</h4>
-                            <p>/person</p>
-                        </div>
-                        <div class="result"><p class="total-1">$0.00</p></div>
-                    </div>
-                    <div class="btn-container">
-                        <input type="reset" value="Reset">
-                    </div>
+                <div class="tips">
+                    <h6>Select Tip %</h6>
+                    <span class="percent">5%</span>
+                    <span class="percent">10%</span>
+                    <span class="percent">15%</span>
+                    <span class="percent">25%</span>
+                    <span class="percent">50%</span>
+                    <input type="text" value="Custom" class="custom">
                 </div>
-            </form>
-        </div>
+                <div class="people">
+                    <p>Number of people</p>
+                    <img src="images/icon-person.svg" alt="">
+                    <input type="text" id="num-of-people" value="0">
+                </div>
+            </div>
+            <div id="result" class="results">
+                <div class="tip-amount">
+                    <div class="tip-by">
+                        <h4>Tip Amount</h4>
+                        <p>/person</p>
+                    </div>
+                    <div class="result"><p class="tip-1">$0.00</p></div>
+                </div>
+                <div class="total-amount">
+                    <div class="total-by">
+                        <h4>Total</h4>
+                        <p>/person</p>
+                    </div>
+                    <div class="result"><p class="total-1">$0.00</p></div>
+                </div>
+                <div class="btn-container">
+                    <input type="reset" value="Reset" class="reset" id="reset">
+                </div>
+            </div>
+        </form>
     </div>
     <footer class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
         Coded by <a href="https://github.com/elasri21" target="_blank">elasri21</a>.
-      </footer>
+    </footer>
     <script src="main.js"></script>
 </body>
 </html>

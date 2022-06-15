@@ -1,0 +1,188 @@
+.page {
+    max-width: 1440px;
+    height: 100%;
+    background-color: $main-bg;
+    @media #{$mobile} {
+        height: auto;
+    }
+    .logo {
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 50px;
+        @media  #{$mobile} {
+            padding-top: 50px;
+        }
+      }
+    form {
+        display: flex;
+        background-color: $white;
+        border-radius: 10px;
+        width: 660px;
+        margin-left: auto;
+        margin-right: auto;
+        @media #{$mobile} {
+            display: block;
+            width: 100%;
+            padding: 20px;
+            border-radius: 15px;
+            .para {
+                width: 95% !important;
+                input, .percent {
+                    width: 45% !important;
+                }
+            }
+            .results {
+                width: 95% !important;
+            }
+            #bill-field,  #num-of-people {
+                width: 95% !important;
+            }
+        }
+        .para {
+            width: 50%;
+            margin: 20px;
+            .bill, .people {
+                width: 100%;
+                position: relative;
+                h6, p {
+                    font-size: 10px;
+                    font-weight: 400;
+                    color: $dark-text-color;
+                    margin-bottom: 5px;
+                    font-weight: bold;
+                }
+                img {
+                    position: absolute;
+                    top: 29px;
+                    left: 8px;
+                    width: 7px;
+                    height: 10px;
+                }
+                #bill-field,  #num-of-people {
+                    border: none;
+                    outline: none;
+                    background-color: $very-light-grayish-cyan;
+                    font-size: 18px;
+                    font-weight: 700;
+                    color: $dark-text-color;
+                    text-align: right;
+                    padding: 5px;
+                    border-radius: 3px;
+                    margin-bottom: 10px;
+                    border: 1px solid $very-light-grayish-cyan;
+                    &:hover {
+                        border-color: $main-bg;
+                        cursor: pointer;
+                    }
+
+                }
+            }
+            .tips {
+                h6 {
+                    font-size: 10px;
+                    font-weight: 400;
+                    color: $dark-text-color;
+                    margin-bottom: 5px;
+                    font-weight: bold;
+                }
+                input, .percent {
+                    text-align: center;
+                    border: none;
+                    outline: none;
+                    background-color: $screen-bg;
+                    color: $white;
+                    display: inline-block;
+                    font-weight: 600;
+                    font-size: 16px;
+                    width: 25%;
+                    padding: 5px;
+                    margin-right: 6px;
+                    margin-bottom: 6px;
+                    border-radius: 4px;
+                    cursor: pointer;
+                }
+                input {
+                    &:last-child {
+                        background-color: $field-bg;
+                        border: 1px solid $field-bg;
+                        color: $dark-grayish-cyan;
+                        text-align: center;
+                        &:hover {
+                            color: $screen-bg;
+                            border-color: $reset-bg;
+                        }
+                    }
+                }
+                .percent {
+                    &:hover {
+                        background-color: rgba($reset-bg, .4);
+                        color: $screen-bg;
+                    }
+                }
+            }
+
+        }
+        .results {
+            width: 50%;
+            margin: 20px;
+            background-color: $screen-bg;
+            padding: 15px;
+            border-radius: 6px;
+            & > div {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                &:first-child {
+                    margin-bottom: 10px;
+                }
+                div {
+                    h4 {
+                        font-size: 12px;
+                        font-weight: 600;
+                        color: $white;
+                    }
+                    p {
+                        font-size: 10px;
+                        font-weight: 400;
+                        color: $dark-text-color;
+                    }
+                }
+                .result {
+                    p {
+                        font-size: 16px;
+                        font-weight: 700;
+                        color: $reset-bg;
+                    }
+                }
+                &.btn-container {
+                    margin-top: 94px;
+                    width: 70%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    .reset {
+                        width: 100%;
+                        border: none;
+                        outline: none;
+                        text-align: center;
+                        padding: 4px;
+                        color: $screen-bg;
+                        background-color: $reset-bg;
+                        border-radius: 4px;
+                        cursor: pointer;
+                        &:hover {
+                            background-color: rgba($field-bg, .4);
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    a {
+        color: hsl(228, 45%, 44%);
+      }
+  }

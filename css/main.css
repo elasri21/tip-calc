@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s ease-in-out;
+}
+
+html, body {
+  height: 100vh;
+}
+
+body {
+  font-family: "Space Mono", sans-serif;
+}
+
+.page {
+  max-width: 1440px;
+  height: 100%;
+  background-color: #c5e4e7;
+}
+@media (max-width: 767px) {
+  .page {
+    height: auto;
+  }
+}
+.page .logo {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+@media (max-width: 767px) {
+  .page .logo {
+    padding-top: 50px;
+  }
+}
+.page form {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  width: 660px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 767px) {
+  .page form {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+  }
+  .page form .para {
+    width: 95% !important;
+  }
+  .page form .para input, .page form .para .percent {
+    width: 45% !important;
+  }
+  .page form .results {
+    width: 95% !important;
+  }
+  .page form #bill-field, .page form #num-of-people {
+    width: 95% !important;
+  }
+}
+.page form .para {
+  width: 50%;
+  margin: 20px;
+}
+.page form .para .bill, .page form .para .people {
+  width: 100%;
+  position: relative;
+}
+.page form .para .bill h6, .page form .para .bill p, .page form .para .people h6, .page form .para .people p {
+  font-size: 10px;
+  font-weight: 400;
+  color: #7f9c9f;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.page form .para .bill img, .page form .para .people img {
+  position: absolute;
+  top: 29px;
+  left: 8px;
+  width: 7px;
+  height: 10px;
+}
+.page form .para .bill #bill-field, .page form .para .bill #num-of-people, .page form .para .people #bill-field, .page form .para .people #num-of-people {
+  border: none;
+  outline: none;
+  background-color: #f4fafa;
+  font-size: 18px;
+  font-weight: 700;
+  color: #7f9c9f;
+  text-align: right;
+  padding: 5px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  border: 1px solid #f4fafa;
+}
+.page form .para .bill #bill-field:hover, .page form .para .bill #num-of-people:hover, .page form .para .people #bill-field:hover, .page form .para .people #num-of-people:hover {
+  border-color: #c5e4e7;
+  cursor: pointer;
+}
+.page form .para .tips h6 {
+  font-size: 10px;
+  font-weight: 400;
+  color: #7f9c9f;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.page form .para .tips input, .page form .para .tips .percent {
+  text-align: center;
+  border: none;
+  outline: none;
+  background-color: #00494d;
+  color: white;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 16px;
+  width: 25%;
+  padding: 5px;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.page form .para .tips input:last-child {
+  background-color: #f4fafa;
+  border: 1px solid #f4fafa;
+  color: #5e7a7d;
+  text-align: center;
+}
+.page form .para .tips input:last-child:hover {
+  color: #00494d;
+  border-color: #26c0ab;
+}
+.page form .para .tips .percent:hover {
+  background-color: rgba(38, 192, 171, 0.4);
+  color: #00494d;
+}
+.page form .results {
+  width: 50%;
+  margin: 20px;
+  background-color: #00494d;
+  padding: 15px;
+  border-radius: 6px;
+}
+.page form .results > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.page form .results > div:first-child {
+  margin-bottom: 10px;
+}
+.page form .results > div div h4 {
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+}
+.page form .results > div div p {
+  font-size: 10px;
+  font-weight: 400;
+  color: #7f9c9f;
+}
+.page form .results > div .result p {
+  font-size: 16px;
+  font-weight: 700;
+  color: #26c0ab;
+}
+.page form .results > div.btn-container {
+  margin-top: 94px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page form .results > div.btn-container .reset {
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: center;
+  padding: 4px;
+  color: #00494d;
+  background-color: #26c0ab;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.page form .results > div.btn-container .reset:hover {
+  background-color: rgba(244, 250, 250, 0.4);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: #3e52a3;
+}
+
+/*# sourceMappingURL=main.css.map */

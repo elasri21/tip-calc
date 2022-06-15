@@ -1,0 +1,26 @@
+// color names
+$strong-cyan: hsl(172, 67%, 45%);
+$very-dark-cyan: hsl(183, 100%, 15%);
+$dark-grayish-cyan: hsl(186, 14%, 43%);
+$medium-dark-grayish-cyan: hsl(184, 14%, 56%);
+$light-grayish-cyan: hsl(185, 41%, 84%);
+$very-light-grayish-cyan: hsl(189, 41%, 97%);
+$white-color: hsl(0, 0%, 100%);
+
+// our colors
+$main-bg: $light-grayish-cyan;
+$field-bg: $very-light-grayish-cyan;
+$screen-bg: $very-dark-cyan;
+$reset-bg: $strong-cyan;
+$dark-text-color: $medium-dark-grayish-cyan;
+$light-text-color: $very-light-grayish-cyan;
+$white: $white-color;
+
+// topography
+
+$input-text-size: 24px;
+
+//break point
+$mobile:'(max-width: 767px)';
+
+
